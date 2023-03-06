@@ -3,20 +3,20 @@ const express = require('express');
 const path = require('path')
 const app = express();
 
-// livereload
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, 'public'));
+// // livereload
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.watch(path.join(__dirname, 'public'));
 
-// connect livereload using express middleware
-const connectLivereload = require("connect-livereload");
-app.use(connectLivereload());
+// // connect livereload using express middleware
+// const connectLivereload = require("connect-livereload");
+// app.use(connectLivereload());
 
-// avoid infinite loop
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+// // avoid infinite loop
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh("/");
+//   }, 100);
+// });
 
 
 // app.set('views', path.join(__dirname, 'views'));
