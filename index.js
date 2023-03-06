@@ -55,6 +55,5 @@ app.get('*', (req, res) => {
   res.sendFile(__dirname + '/views/404.html');
 });
 
-app.listen(8000, () => {
-  console.log('Listening on 8000');
-});
+port = process.env.port || 8000;
+app.listen(port, () => {console.log(`Listening on ${port}`)}  );
