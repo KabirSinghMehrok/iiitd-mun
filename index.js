@@ -2,6 +2,8 @@ const livereload = require("livereload");
 const express = require('express');
 const path = require('path')
 const app = express();
+const fs = require('fs');
+const committeeInfo = JSON.parse(fs.readFileSync('./public/content/COMMITTEE_INFO.json'));
 
 // livereload
 if (process.env.NODE_ENV === 'development') {
@@ -19,41 +21,33 @@ if (process.env.NODE_ENV === 'development') {
     }, 100);
   });
 }
+else {
+  console.log(process.env.NODE_ENV)
+}
 
-// app.set('views', path.join(__dirname, 'views'));
+const committee_names = Object.keys(committeeInfo)
+const validateUrl = (req, res, next) => {
+  request_page = req.url.slice(1)
+  if (committee_names.includes(request_page)) {
+    res.render('committee_info', {data : committeeInfo[request_page]})
+  }
+  else {
+    next()
+  }
+}
+
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(validateUrl)
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs')
 
-// Define routes for home.html and about.html
+// Define routes
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
-
-app.get('/unga', (req, res) => {
-  res.sendFile(__dirname + '/views/unga.html');
-});
-
-app.get('/unsc', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
-});
-
-app.get('/g20', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
-});
-
-app.get('/uncsw', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
-});
-
-app.get('/unhrc', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
-});
-
-app.get('/aippm', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
+  res.render('index', {data: committeeInfo});
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/views/404.html');
+  res.render('404');
 });
 
 port = process.env.port || 8000;

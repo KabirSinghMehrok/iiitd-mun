@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IIITD MUN</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  </head>
+  <body>
+  <div class="flex flex-col h-screen">
+    <header>
+    <%- include('../public/partials/navbar.ejs') %>
+  
+    <div class="w-full bg-center bg-cover h-[38rem]" style="background-image: url('../assets/hero-background.jpg');">
+      <div class="flex items-center justify-center w-full h-full bg-gray-900/60">
+      <div class="text-center">
+        <h1 class="text-3xl font-semibold text-white lg:text-4xl">Welcome to <span class="text-blue-200">IIITD MUN</span></h1>
+        <a href="https://forms.gle/kfedfu1sCUDmTrQG9">
+        <button class="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+          Register Now!
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+    </header>
+  
+    <!-- Main body -->
+    <main class="flex-grow dark:bg-gray-900">
+    
+      <!-- About section -->
+      <section class="bg-white dark:bg-gray-900 sm:my-10">
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">About</h1>
+          <p class="mt-4 text-lg dark:text-white">
+            Model United Nations (MUN) is a simulation of the United Nations where students play the role of delegates to debate on international issues and propose solutions. IIIT Delhi is organizing an MUN which will have 6 committees, including the United Nations Security Council, the World Health Organization, and the United Nations Environment Programme.
+          </p>
+          <p class="text-lg dark:text-white">
+            MUN provides students with the opportunity to enhance their critical thinking, public speaking, and negotiation skills. The simulation allows delegates to research and understand different perspectives on global issues, learn about international relations, and develop their leadership abilities. The event encourages teamwork, cooperation, and effective communication.
+          </p>
+          <p class="text-lg dark:text-white">
+            Apart from the academic benefits, MUN also provides students with the opportunity to network and meet new people from different backgrounds. It helps build confidence, and provides a platform to practice skills that will be useful in any career path.
+          </p>
+          <p class="text-lg dark:text-white">
+            MUN is a great platform to foster global citizenship, and encourages delegates to become responsible global citizens by understanding international issues and taking action to address them. The experience gained from participating in MUN can be valuable for future careers in law, diplomacy, politics, and international relations.
+          </p>
+          <p class="text-lg dark:text-white">
+            Overall, MUN is a rewarding experience for students as it provides a unique opportunity to learn, grow, and contribute to global issues. IIIT Delhi's MUN is a great initiative for students to get involved and enhance their skills while also having fun and making new connections.
+          </p>
+
+
+
+
+          </p>
+        </div>
+      </section>
+
+      <!-- Committees section -->
+      <section class="bg-white dark:bg-gray-900 sm:my-10">
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Committees</h1>
+      
+          <p class="mt-4 text-center text-gray-500 dark:text-gray-300">
+            IIIT Delhi hosts various committees of Model United Nations (MUN) for students to participate in, providing opportunities to enhance their diplomatic skills and broaden their perspectives.
+          </p>
+      
+      
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+            
+            <% Object.keys(data).forEach(key => { %>
+              <a href="/<%=key%>" class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+                style="background-image:url('<%= data[key].img%>'); background-position: center;">
+                <div
+                  class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                  <h2 class="mt-4 text-xl font-semibold text-white capitalize"><%= data[key].title %></h2>
+                  <!-- <p class="mt-2 text-lg tracking-wider text-blue-400 uppercase "><%= data[key].title %></p> -->
+                </div>
+              </a>
+            <% }) %>
+
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+    </main>
+    
+    <%- include('../public/partials/footer.ejs') %>
+  </div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </body>
+</html>

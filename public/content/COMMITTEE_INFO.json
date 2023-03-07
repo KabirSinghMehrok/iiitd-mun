@@ -1,0 +1,43 @@
+{
+	"unga": {
+		"title"				: "United Nations General Assembly (UNGA)",
+		"img"					: "https://i.imgur.com/NTe56du.jpg",
+		"description"	: "The UNGA is the main deliberative body of the United Nations and is composed of all member states. The UNGA has six main committees, including the First Committee, which deals with disarmament and international security, and the Sixth Committee, which deals with legal matters.",
+		"topic"				: "Addressing the Issue of Nuclear Proliferation"
+	},
+
+	"unsc": {
+		"title"				: "United Nations Security Council (UNSC)",
+		"img"					: "https://i.imgur.com/5lQlbxe.jpg",
+		"description"	: "The UNSC is responsible for maintaining international peace and security. It is composed of five permanent members (China, France, Russia, the United Kingdom, and the United States) and ten non-permanent members, elected for two-year terms.",
+		"topic"				: "Addressing Geopolitical Instability with Special Emphasis on the Crisis in Ukraine"
+	},
+
+	"uncsw": {
+		"title"				: "United Nations Commission on the Status of Women (UNCSW)",
+		"img"					: "https://i.imgur.com/6YKWS3a.jpg",
+		"description"	: "The UNCSW is dedicated to promoting gender equality and the empowerment of women. It is composed of 45 member states elected by the UNGA.",
+		"topic"				: "Addressing Reproductive Rights for Women"
+	},
+
+	"unhrc": {
+		"title"				: "United Nations Human Rights Council (UNHRC)",
+		"img"					: "https://i.imgur.com/dxQtG3e.jpg",
+		"description"	: "The UNHRC is responsible for promoting and protecting human rights around the world. It is composed of 47 member states elected by the UNGA.",
+		"topic"				: "Combating Human Trafficking and Protecting the Rights of Migrant Workers"
+	},
+
+	"aippm": {
+		"title"				: "All India Political Parties Meet (AIPPM)",
+		"img"					: "https://i.imgur.com/qQcXCf3.jpg",
+		"description"	: "The AIPPM is a simulated national political conference that brings together political parties from across India to discuss and debate key policy issues.",
+		"topic"				: "Implementing a Uniform Civil Code in India"
+	},
+
+	"g20": {
+		"title"				: "Group of Twenty (G20)",
+		"img"					: "https://i.imgur.com/7RDxMw8.jpg",
+		"description"	: "The G20 is an international forum that brings together the world’s major economies to discuss economic and financial issues. It is composed of 19 individual countries and the European Union.",
+		"topic"				: "Bridging the Divide on Carbon Footprint and Climate Change"
+	}
+}

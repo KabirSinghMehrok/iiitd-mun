@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IIITD MUN</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  </head>
+  <body>
+    <main class="flex flex-col h-screen dark:bg-gray-900">
+
+      <header>
+        <%- include('../public/partials/navbar.ejs') %>
+        <div class="w-full bg-center bg-cover h-[20rem]" style="background-image: url('<%= data.img %>');">
+          <div class="flex items-center justify-center w-full h-full bg-gray-900/60">
+            <div class="text-center">
+              <h1 class="text-3xl font-semibold text-white lg:text-4xl"><%= data.title %></h1>
+              <h3 class="text-2xl mt-2 text-white"><span class="text-blue-300 font-medium">Topic : </span><%= data.topic %></h3>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+
+      <section class="px-10 py-16 flex-grow">
+        <p class="mt-4 text-lg dark:text-white"><%= data.description %></p>
+      </section>
+      
+      <%- include('../public/partials/footer.ejs') %>
+    
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </body>
+</html>
