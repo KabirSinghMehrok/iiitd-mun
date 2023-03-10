@@ -50,5 +50,5 @@ app.get('*', (req, res) => {
   res.render('404');
 });
 
-port = process.env.port || 8000;
+port = process.env.port || 7000;
 app.listen(port, () => {console.log(`Listening on ${port}`)}  );
