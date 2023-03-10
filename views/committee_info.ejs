@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
   </head>
   <body>
-    <main class="flex flex-col h-screen dark:bg-gray-900">
+    <main class="flex flex-col min-h-screen dark:bg-gray-900">
 
       <header>
         <%- include('../public/partials/navbar.ejs') %>
@@ -23,8 +23,10 @@
         
       </header>
 
-      <section class="px-10 py-16 flex-grow">
+      <section class="bg-white dark:bg-gray-900 px-10 py-16 flex-grow w-full self-center lg:w-2/3">
         <p class="mt-4 text-lg dark:text-white"><%= data.description %></p>
+        <h4 class="text-2xl mt-8 lg:mt-10 dark:text-white"><span class= "font-bold">Topic : </span><%= data.topic %></h3>
+        <p class="mt-4 text-lg dark:text-white"><%= data.abstract %></p>
       </section>
       
       <%- include('../public/partials/footer.ejs') %>

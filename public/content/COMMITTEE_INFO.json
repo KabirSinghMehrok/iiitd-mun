@@ -2,42 +2,48 @@
 	"unga": {
 		"title"				: "United Nations General Assembly (UNGA)",
 		"img"					: "https://i.imgur.com/NTe56du.jpg",
-		"description"	: "The UNGA is the main deliberative body of the United Nations and is composed of all member states. The UNGA has six main committees, including the First Committee, which deals with disarmament and international security, and the Sixth Committee, which deals with legal matters.",
-		"topic"				: "Addressing the Issue of Nuclear Proliferation"
+		"description"	: "The UNGA is a policy-making committee, with delegates representing Member States of the United Nations. It acts as a forum for multilateral discussion on international issues covered by the Charter of the United Nations. Thus, the UNGA plays a critical role in promoting international cooperation and addressing global challenges. During the General Debate, each member state will have the opportunity to address the assembly and present its views on current international issues. Each Member State has one vote. The President of the UNGA will facilitate the meeting and ensure that member states adhere to the specific regulations. As the UNGA operates on the basis of consensus, decisions will be made through dialogue and cooperation among the delegates representing member states.",
+		"topic"				: "Addressing the Issue of Nuclear Proliferation",
+		"abstract"		: "The development and spread of nuclear weapons significantly threaten global peace and security. Focus will be placed on the nuclear programs of two countries, Iran and North Korea, and the international community's efforts to prevent further proliferation. While the international community has sought to reduce nuclear proliferation through several measures and treaties in the past, these efforts have been insufficient. As the issue of nuclear proliferation poses a significant threat to world peace, the international community must continue to work together to prevent the development and spread of nuclear weapons. The committee will particularly focus on holding countries such as Iran and North Korea accountable for their actions, and pressuring them to abandon their nuclear programs"
 	},
 
 	"unsc": {
 		"title"				: "United Nations Security Council (UNSC)",
 		"img"					: "https://i.imgur.com/5lQlbxe.jpg",
-		"description"	: "The UNSC is responsible for maintaining international peace and security. It is composed of five permanent members (China, France, Russia, the United Kingdom, and the United States) and ten non-permanent members, elected for two-year terms.",
-		"topic"				: "Addressing Geopolitical Instability with Special Emphasis on the Crisis in Ukraine"
+		"description"	: "The UNSC is primarily responsible for maintaining international peace and security. It has 15 Members, and each Member has one vote. It’s 5 permanent members have have veto powers. The UN Charter gives the UNSC primary responsibility for maintaining international peace and security. The Council may convene at any time, whenever peace is threatened. In contrast to the decisions made by the General Assembly, all Member States are obligated under the UN Charter to carry out the Security Council’s decisions.",
+		"topic"				: "Addressing Geopolitical Instability with Special Emphasis on the Crisis in Ukraine",
+		"abstract"		: "The Russo-Ukrainian War of 2022 has claimed more than 13,000 lives and displaced over a million people. The situation in Ukraine has become a geopolitical crisis, as the conflict involves Russia, Ukraine, and several other countries. Thus, the UNSC will convene to discuss measures to address the ongoing crisis. The Council must resolve the conflict as peacefully as possible and ensure that ceasefire agreements are respected. The Council will consider measures such as providing humanitarian aid, imposing sanctions, or encouraging dialogue between the conflicting parties. It is the responsibility of the Security Council to play a leading role in addressing"
 	},
 
 	"uncsw": {
 		"title"				: "United Nations Commission on the Status of Women (UNCSW)",
 		"img"					: "https://i.imgur.com/6YKWS3a.jpg",
 		"description"	: "The UNCSW is dedicated to promoting gender equality and the empowerment of women. It is composed of 45 member states elected by the UNGA.",
-		"topic"				: "Addressing Reproductive Rights for Women"
+		"topic"				: "Addressing Reproductive Rights for Women",
+		"abstract"		: ""
 	},
 
 	"unhrc": {
 		"title"				: "United Nations Human Rights Council (UNHRC)",
 		"img"					: "https://i.imgur.com/dxQtG3e.jpg",
 		"description"	: "The UNHRC is responsible for promoting and protecting human rights around the world. It is composed of 47 member states elected by the UNGA.",
-		"topic"				: "Combating Human Trafficking and Protecting the Rights of Migrant Workers"
+		"topic"				: "Combating Human Trafficking and Protecting the Rights of Migrant Workers",
+		"abstract"		: ""
 	},
 
 	"aippm": {
 		"title"				: "All India Political Parties Meet (AIPPM)",
 		"img"					: "https://i.imgur.com/qQcXCf3.jpg",
-		"description"	: "The AIPPM is a simulated national political conference that brings together political parties from across India to discuss and debate key policy issues.",
-		"topic"				: "Implementing a Uniform Civil Code in India"
+		"description"	: "The All India Political Parties Meet [AIPPM] is a non-technical committee, comprising delegates representing Indian parties across the diverse political spectrum. It typically addresses issues of national importance, with delegates representing the views of their political parties. The goal of the committee is come to some consensus on a particular issue before legislative sessions regarding the topics begin.",
+		"topic"				: "Implementing a Uniform Civil Code in India",
+		"abstract"		: "India is a diverse country with multiple religions, cultures, and traditions. However, this diversity has also resulted in different personal laws governing various aspects of life, including marriage, divorce, inheritance, and adoption. The implementation of a Uniform Civil Code (UCC) has been a long-standing debate in India, aimed at providing a common civil code for all citizens irrespective of their religion. Hence, the AIPPM will conduct discussion and debate on the implementation of a UCC, with the goal of creating a consensus among political parties and religious groups on the implementation of a UCC. Factors like gender equality and social justice will play key roles during the debate. The conflict between respecting people's religious sentiments and maintaining the nation's secular nature will also be brought up for debate"
 	},
 
 	"g20": {
 		"title"				: "Group of Twenty (G20)",
 		"img"					: "https://i.imgur.com/7RDxMw8.jpg",
-		"description"	: "The G20 is an international forum that brings together the world’s major economies to discuss economic and financial issues. It is composed of 19 individual countries and the European Union.",
-		"topic"				: "Bridging the Divide on Carbon Footprint and Climate Change"
+		"description"	: "The G20 is an intergovernmental committee. It composes delegates representing 19 countries and the European Union (EU). It typically addresses major issues related to the global economy, such as international financial stability, climate change mitigation, and sustainable development. Discussions and negotiations will be led by the representatives of the respective member countries. Each delegate will present their country's position on the issue at hand, and work to persuade others to support their position. Negotiations will take place both in a formal setting. The delegates will try to come at a consensus regarding the subject issues.",
+		"topic"				: "Bridging the Divide on Carbon Footprint and Climate Change",
+		"abstract"		: "The issue of climate change has become a global concern in recent years, with increasing evidence of its impacts on the environment and human health. The G20 countries, responsible for more than 75% of global greenhouse gas emissions, have a critical role in addressing this issue. The G20 countries are responsible for most global greenhouse gas emissions and can lead in reducing emissions and promoting clean energy. Thus, bridging the divide on carbon footprint and climate change is a pressing issue that requires urgent action from the committee. They must take a leading role in reducing greenhouse gas emissions, promoting clean energy, and supporting the transition to a low-carbon economy. This is necessary for limiting the impact of worldwide heating caused by emissions"
 	}
 }
