@@ -5,12 +5,12 @@
     "ext": "js,html"
   },
   "description": "IIITD MUN Website",
-  "main": "./src/app.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node ./app.js",
+    "start": "node ./index.js",
     "build:prod": "cross-env NODE_ENV=production postcss public/styles/tailwind.css -o public/styles/style.css",
     "build:dev": "postcss public/styles/tailwind.css -o public/styles/style.css --watch",
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run build:dev\" \"nodemon app.js\" ",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run build:dev\" \"nodemon index.js\" ",
     "test": "echo \"No test command created\" && exit 1"
   },
   "keywords": [
